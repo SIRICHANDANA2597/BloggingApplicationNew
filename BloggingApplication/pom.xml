@@ -35,16 +35,7 @@
 
 		
 	<dependency>
-		<profiles>
-		<profile>
-       <id>sonar</id>
-       <properties>
-       <sonar.host.url>
-           http://localhost:9000
-       </sonar.host.url>
-       </properties>
-   </profile>
-</profiles>
+		
     <groupId>org.springframework</groupId>
     <artifactId>spring-context-support</artifactId>
     <version>4.0.2.RELEASE</version>
@@ -104,6 +95,16 @@
     <scope>provided</scope>
 </dependency>
   </dependencies>
+	<profiles>
+		<profile>
+       <id>sonar</id>
+       <properties>
+       <sonar.host.url>
+           http://localhost:9000
+       </sonar.host.url>
+       </properties>
+   </profile>
+</profiles>
 
 
 	<properties>
